@@ -145,6 +145,29 @@ section {
     height: 500px;
 }
 
+#banco-de-dados {
+    flex-direction: column;
+}
+h2 {
+    color: #fff;
+    padding: 20px;
+}
+#banco-de-dados div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+#button-salvar {
+    width: 100px;
+    height: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#button-salvar :hover{
+    background-color: #000000;
+}
+
 section:nth-of-type(1){
 
     background-image: url(imagens/conceito-de-mesa-vista-superior-com-espaco-de-copia.jpg);
