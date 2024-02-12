@@ -1,6 +1,6 @@
 <?php 
 
-        /* if(isset($_POST['submit']))
+        if(isset($_POST['submit']))
 
         include_once('config.php');
 
@@ -8,7 +8,7 @@
         $email = $_POST['email'];
         $numero = $_POST['numero'];
 
-        $resul = mysqli_query($conectado, "INSERT INTO tabela(nomeEmpresa,email,num) VALUES('$nome','$email','$numero')"); */
+        $resul = mysqli_query($conectado, "INSERT INTO tabela(nomeEmpresa,email,num) VALUES('$nome','$email','$numero')");
 
 ?>
 <!DOCTYPE html>
