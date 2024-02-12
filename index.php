@@ -1,14 +1,7 @@
-    <?php 
+<?php 
 
         if(isset($_POST['submit']))
-        /* {
-            print_r($_POST['nome-empresa']);
-            print_r('<br>');
-            print_r($_POST['email']);
-            print_r('<br>');
-            print_r($_POST['numero']);
-            
-        } */
+
         include_once('config.php');
 
         $nome = $_POST['nome-empresa'];
@@ -17,7 +10,8 @@
 
         $resul = mysqli_query($conectado, "INSERT INTO tabela(nomeEmpresa,email,num) VALUES('$nome','$email','$numero')");
 
-        ?>
+?>
+   
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -87,7 +81,7 @@
                         
         </section>
         <section>
-            <form action="index.php" method="post" id="banco-de-dados">
+            <form action="index.html" method="post" id="banco-de-dados">
             
             
                     <h2>Posso salvar o seu contato no meu banco de dados pessoal e entrar em contato posteriormente? (PHP-MySQL)</h2>
@@ -109,8 +103,8 @@
          
                     
     </main>
-    <script src="javascript/script.js">
-
-    </script>
+    <script src="javascript/script.js"></script> 
+    
+    
 </body>
 </html>
