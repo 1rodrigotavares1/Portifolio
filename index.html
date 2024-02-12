@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 
         if(isset($_POST['submit']))
 
@@ -10,7 +10,7 @@
 
         $resul = mysqli_query($conectado, "INSERT INTO tabela(nomeEmpresa,email,num) VALUES('$nome','$email','$numero')");
 
-?>
+?> -->
    
 
 <!DOCTYPE html>
@@ -81,10 +81,11 @@
                         
         </section>
         <section>
-            <form action="index.html" method="post" id="banco-de-dados">
+            <form action="cadastro.php" method="post" id="banco-de-dados">
             
             
-                    <h2>Posso salvar o seu contato no meu banco de dados pessoal e entrar em contato posteriormente? (PHP-MySQL)</h2>
+                    <h2>Envie seus dados para que eu possa entrar em contato posteriormente. 
+                        <br>(PHP-MySQL)</h2>
                     <div>
                         <label for="nome-empresa">Nome/Empresa</label>
                         <input type="text" name="nome-empresa" id="nome-empresa">
