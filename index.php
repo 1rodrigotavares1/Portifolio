@@ -1,3 +1,24 @@
+    <?php 
+
+        if(isset($_POST['submit']))
+        /* {
+            print_r($_POST['nome-empresa']);
+            print_r('<br>');
+            print_r($_POST['email']);
+            print_r('<br>');
+            print_r($_POST['numero']);
+            
+        } */
+        include_once('config.php');
+
+        $nome = $_POST['nome-empresa'];
+        $email = $_POST['email'];
+        $numero = $_POST['numero'];
+
+        $resul = mysqli_query($conectado, "INSERT INTO tabela(nomeEmpresa,email,num) VALUES('$nome','$email','$numero')");
+
+        ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -65,22 +86,27 @@
             </div>
                         
         </section>
-        <section id="banco-de-dados">
+        <section>
+            <form action="index.php" method="post" id="banco-de-dados">
             
-            <h2>Posso salvar o seu contato no meu banco de dados pessoal? (Em breve)</h2>
-
-            <div>
-                <p>Nome/Empresa</p><input type="text" id="nome-empresa">
-            </div>
-            <div>
-                <p>E-mail</p><input type="text" id="e-mail-empresa">
-            </div>
-            <div>
-                <p>Número/Wpp</p><input type="text" id="numero-empresa">
-            </div>
-
-            <input type="button" value="Salvar" id="button-salvar">
-        </section> 
+            
+                    <h2>Posso salvar o seu contato no meu banco de dados pessoal e entrar em contato posteriormente? (PHP-MySQL)</h2>
+                    <div>
+                        <label for="nome-empresa">Nome/Empresa</label>
+                        <input type="text" name="nome-empresa" id="nome-empresa">
+                    </div>
+                    <div>
+                        <label for="e-mail"><p>E-mail</p></label>
+                        <input type="text" name="email" id="e-mail-empresa">
+                    </div>
+                    <div>
+                        <label for="numero">Número/Wpp</label>
+                        <input type="tel" name="numero" id="numero-empresa">
+                    </div>
+                    <input type="submit" name="submit" value="Salvar" id="button-salvar">
+            </form>
+        </section>
+         
                     
     </main>
     <script src="javascript/script.js">

@@ -2,7 +2,7 @@
     $dbHost = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
-    $dbName = "meubancodedadosportifolio";
+    $dbName = "portifolio";
     $conectado = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
     /* if($conectado->connect_errno)

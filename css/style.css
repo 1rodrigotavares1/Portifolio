@@ -195,8 +195,11 @@ section {
     width: 100%;
 }
 
-#banco-de-dados {
+#banco-de-dados { 
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 h2 {
     color: #fff;
