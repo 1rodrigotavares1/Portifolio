@@ -11,7 +11,7 @@
         $resul = mysqli_query($conectado, "INSERT INTO tabela(nomeEmpresa,email,num) VALUES('$nome','$email','$numero')");
 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -26,4 +26,4 @@
     </div>
 
 </body>
-</html>
+</html> -->
